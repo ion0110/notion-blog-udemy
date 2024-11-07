@@ -1,7 +1,5 @@
-import Image from "next/image";
-import localFont from "next/font/local";
 import { GetStaticPaths, GetStaticProps } from "next";
-import { getAllPosts, getAllTags, getNumberOfPages, getPostsByPage, getPostsForTopPage } from "../../../lib/notionAPI"
+import { getAllTags, getNumberOfPages, getPostsByPage } from "../../../lib/notionAPI"
 import SinglePost from "@../../../components/Post/SinglePost";
 import Pagination from "@/components/Pagination/Pagenation";
 import Tag from "@/components/Tag/Tag";
