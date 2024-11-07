@@ -43,7 +43,7 @@ const Post = ({ post }) => {
 
                 components={{
                     code(props) {
-                        const { children, className, node, ...rest } = props
+                        const { children, className, node } = props
                         const match = /language-(\w+)/.exec(className || '')
                         return match ? (
                             <SyntaxHighlighter
@@ -54,7 +54,7 @@ const Post = ({ post }) => {
                                 style={vscDarkPlus}
                             />
                         ) : (
-                            <code {...rest} className={className}>
+                            <code>
                                 {children}
                             </code>
                         )
