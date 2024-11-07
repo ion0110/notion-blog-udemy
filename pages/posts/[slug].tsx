@@ -43,7 +43,7 @@ const Post = ({ post }) => {
 
                 components={{
                     code(props) {
-                        const { children, className, node } = props
+                        const { children, className } = props
                         const match = /language-(\w+)/.exec(className || '')
                         return match ? (
                             <SyntaxHighlighter
